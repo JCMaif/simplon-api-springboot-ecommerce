@@ -1,0 +1,17 @@
+meta {
+  name: createInvoice
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/invoice
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  order_id: 
+  date: 
+  user_id: 
+}

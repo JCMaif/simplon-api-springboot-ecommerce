@@ -1,0 +1,19 @@
+meta {
+  name: findCartByID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/api/carts/{{cart_id}}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  cart_id: {{cart_id}}
+}
+
+vars:pre-request {
+  cart_id: 1
+}

@@ -1,0 +1,28 @@
+meta {
+  name: updateCart
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{host}}/api/carts/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userId": 1,
+    "lines": [
+      {
+        "productId": 1,
+        "quantity": 2
+      },
+      {
+        "productId": 3,
+        "quantity": 1
+      }
+    ]
+  }
+  
+}

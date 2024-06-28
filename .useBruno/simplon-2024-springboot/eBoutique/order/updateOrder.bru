@@ -1,0 +1,11 @@
+meta {
+  name: updateOrder
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{host}}/orders/{{orderId}}
+  body: none
+  auth: none
+}

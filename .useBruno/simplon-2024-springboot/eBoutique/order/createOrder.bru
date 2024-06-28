@@ -1,0 +1,17 @@
+meta {
+  name: createOrder
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/order
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  user_id: 
+  date: 
+  cart_id: 
+}

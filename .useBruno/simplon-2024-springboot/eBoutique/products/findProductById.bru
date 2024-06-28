@@ -1,0 +1,19 @@
+meta {
+  name: findProductById
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/products/{{product_id}}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  product_id: {{product_id}}
+}
+
+vars:pre-request {
+  product_id: 2
+}

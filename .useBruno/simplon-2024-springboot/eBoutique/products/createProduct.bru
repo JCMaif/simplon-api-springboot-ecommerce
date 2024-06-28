@@ -1,0 +1,23 @@
+meta {
+  name: createProduct
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "coupe ongles pour pieds",
+    "price": 400
+  }
+}
+
+body:multipart-form {
+  name: "caisse"
+  price: 280
+}

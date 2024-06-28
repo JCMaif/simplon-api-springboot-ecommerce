@@ -1,0 +1,11 @@
+meta {
+  name: getAllProducts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/api/products
+  body: multipartForm
+  auth: none
+}

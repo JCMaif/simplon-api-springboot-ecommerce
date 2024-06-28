@@ -1,0 +1,1 @@
+"# simplon-api-springboot-ecommerce"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/JCMaif/simplon-api-springboot-ecommerce.gitgit push -u origin main
